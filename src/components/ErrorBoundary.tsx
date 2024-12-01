@@ -39,7 +39,7 @@ interface Props<T = any> {
 
 const color = "#e78284";
 
-const logger = new Logger("React ErrorBoundary", color);
+const logger = new Logger("JarsaxDM ErrorBoundary", color);
 
 const NO_ERROR = {};
 
@@ -85,11 +85,11 @@ const ErrorBoundary = LazyComponent(() => {
                     {...this.state}
                 />;
 
-            const msg = this.props.message || "An error occurred while rendering this Component. More info can be found below and in your console.";
+            const msg = this.props.message || "Ocurrió un error al renderizar este componente. Puedes encontrar más información abajo y en tu consola.";
 
             return (
                 <ErrorCard style={{ overflow: "hidden" }}>
-                    <h1>Oh no!</h1>
+                    <h1>¡Ups! Algo salió mal</h1>
                     <p>{msg}</p>
                     <code>
                         {this.state.message}

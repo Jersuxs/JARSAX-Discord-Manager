@@ -1,5 +1,5 @@
 /*
- * Vencord, a modification for Discord's desktop app
+ * JarsaxDM, a modification for Discord's desktop app
  * Copyright (c) 2022 Vendicated and contributors
  *
  * This program is free software: you can redistribute it and/or modify
@@ -135,7 +135,7 @@ function Updatable(props: CommonProps) {
                             setUpdates([]);
                             await new Promise<void>(r => {
                                 Alerts.show({
-                                    title: "Update Success!",
+                                    title: "JarsaxDM Update Success!",
                                     body: "Successfully updated. Restart now to apply the changes?",
                                     confirmText: "Restart",
                                     cancelText: "Not now!",
@@ -205,19 +205,19 @@ function Updater() {
     };
 
     return (
-        <SettingsTab title="Vencord Updater">
+        <SettingsTab title="JarsaxDM Updater">
             <Forms.FormTitle tag="h5">Updater Settings</Forms.FormTitle>
             <Switch
                 value={settings.autoUpdate}
                 onChange={(v: boolean) => settings.autoUpdate = v}
-                note="Automatically update Vencord without confirmation prompt"
+                note="Automatically update JarsaxDM without confirmation prompt"
             >
                 Automatically update
             </Switch>
             <Switch
                 value={settings.autoUpdateNotification}
                 onChange={(v: boolean) => settings.autoUpdateNotification = v}
-                note="Shows a notification when Vencord automatically updates"
+                note="Shows a notification when JarsaxDM automatically updates"
                 disabled={!settings.autoUpdate}
             >
                 Get notified when an automatic update completes
