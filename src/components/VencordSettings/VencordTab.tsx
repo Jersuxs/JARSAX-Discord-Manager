@@ -225,7 +225,7 @@ function VencordSettings() {
                     serialize={identity} />
             </>}
 
-            <Forms.FormSection className={Margins.top16} title="Vencord Notifications" tag="h5">
+            <Forms.FormSection className={Margins.top16} title="JarsaxDM Notifications" tag="h5">
                 <Flex>
                     <Button onClick={openNotificationSettingsModal}>
                         Notification Settings
