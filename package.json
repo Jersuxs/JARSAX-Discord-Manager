@@ -1,8 +1,8 @@
 {
-    "name": "vencord",
+    "name": "jarsaxdm",
     "private": "true",
     "version": "1.10.8",
-    "description": "The cutest Discord client mod",
+    "description": "JarsaxDM - A Discord client mod based on Vencord",
     "homepage": "https://github.com/Vendicated/Vencord#readme",
     "bugs": {
         "url": "https://github.com/Vendicated/Vencord/issues"
